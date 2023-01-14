@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--My first html-->
+<!--Hello, world!.html-->
+<html>
+    <head>
+        <meta charset = "utf-8"> 
+        <title>Hello, world!</title>
+    </head>
+    <body style = "background-color: #00BFFF">
+        <!--style后写CSS代码(如颜色, 字体, 字号, 长宽等)-->
+        <!--body也可以用background-color调整背景颜色-->
+        <!--使用透明背景的div块制作可以移动的文字(实现方法之一)-->
+        <style>
+            /* <style>CSS测试 */
+            /* #号后面写id */
+            /* */
+            /* @font-face定义自定义字体*/
+            /* font-family处写字体名称 */
+            /* src: url()处写路径 */
+            @font-face
+            {
+                /* 引用时字体名称 */
+                font-family: "Unifont";
+                /* 字体路径 */
+                src: url("/Fonts/UniFont_14.0.01.ttf")
+            }
+            #Text_7
+            {
+                /* 背景颜色 */
+                background-color: #000000;
+                /* 长度 */
+                width: 700px
+            }
+            #White_text_in_a_block_2
+            {
+                /* 文字颜色 */
+                color: #FFFFFF
+            }
+            #Border_style_test
+            {
+                /* 长度 */
+                width: 700px;
+                /* 边缘类型 */
+                border-style: solid;
+                /* 圆角大小 */
+                border-radius: 5px;
+                /* 边缘宽度 */
+                border-width: 1px;
+                /* 边缘颜色 */
+                border-color: #FF0000
+            }
+            /* 填写格式: 标签.类名*/
+            /* 代码中使用<标签 class = "类名"></标签>来引用 */
+            /* 例: div.test{CSS代码} */
+            /* 例: <div class = "test">HTML代码</div> */
+            /* 例: <p class = "test">HTML代码</p>是不行的 */
+            p.padding
+            {
+                /* 上填充 */
+                padding-top: 50px;
+                /* 下填充 */
+                padding-bottom: 50px;
+                /* 左填充 */
+                padding-left: 50px;
+                /* 右填充 */
+                padding-right: 50px;
+            }
+            
+        </style>
+        <h1>Hello, world!</h1>
+        <p style = "color: #007FFF">Hello, world!</p>
+        <div id = "Text_in_a_block" style = "background-color: #005BFF; width: 160px;">在方形里的一段文字</div>
+        <br>
+        <div id = "Text" style = "width: 700px; text-align: center">可移动文字</div>
+        <div id = "Text_2" style = "background-color: #005BFF; width: 700px; text-align: center">可移动文字(带边框)</div>
+        <div id = "Text_3" style = "background-color: #0040FF; width: 700px; text-align: center">连起来的两个框</div>
+        <div id = "Text_4" style = "background-color: #0030FF; width: 700px; text-align: left">文字在左边</div>
+        <div id = "Text_5" style = "background-color: #0020FF; width: 700px; text-align: right">文字在右边</div>
+        <div id = "Text_6" style = "background-color: #000000; width: 700px">
+            <p id = "White_text_in_a_block" style = "color: #FFFFFF">div块中自定义文字样式</p>
+        </div>
+        <div id = "Text_7">
+            <p id = "White_text_in_a_block_2">CSS测试(效果同上)</p>
+        </div>
+        <div id = "Border_style_test">
+            <p>边框测试</p>
+        </div> 
+        <p id = "Text_8" class = "padding" style = "width: 600px">另一种方式完成移动文字</p>
+        <p id = "Text_9" class = "padding" style = "background-color: #000000; color: #FFFFFF; width: 600px">另一种方式完成移动文字(带边框)</p>
+        <!--此处调用了@font-face导入的Unifont字体-->
+        <p id = "Text_10" style = "font-family: Unifont; font-size: 20px">不同的字体(此处字体Unifont14)</p>
+    </body>
+</html>
